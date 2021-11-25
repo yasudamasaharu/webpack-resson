@@ -1,6 +1,6 @@
 import _ from 'lodash'
 import './style.css'
-
+import logo from './logo.png'
 
 function component() {
   const element = document.createElement('div');
@@ -12,3 +12,6 @@ function component() {
 document.body.appendChild(component());
 document.body.classList.add('haikei')
 
+const img = new Image()
+img.src = logo
+document.body.appendChild(img);
